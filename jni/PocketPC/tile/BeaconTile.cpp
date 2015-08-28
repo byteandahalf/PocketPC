@@ -12,7 +12,15 @@ BeaconTile::BeaconTile(int id) : EntityTile(id, &Material::metal) {
 	new TileItem(id - 256);
 }
 
-const TextureUVCoordinateSet& BrewingStandTile::getTexture(signed char side, int data) {
+BeaconTile::isCubeShaped() { 
+     return false;
+}
+
+BeaconTile::isSolidRender() { 
+     return false;
+}
+
+const TextureUVCoordinateSet& BeaconTile::getTexture(signed char side, int data) {
 	return side == 0 ? tex : (side == 1 ? secondary_tex : terciary_tex);
 }
 
