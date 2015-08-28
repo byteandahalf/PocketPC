@@ -4,6 +4,9 @@
 
 class BeaconTile: public Tile {
 public:	
+
+	static Tile* beacon;
+	
 	BeaconTile(int);
 
 	virtual const TextureUVCoordinateSet& getTexture(signed char, int);
