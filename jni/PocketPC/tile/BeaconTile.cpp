@@ -5,7 +5,7 @@ Tile* BeaconTile::beacon = NULL;
 BeaconTile::BeaconTile(int id) : Tile(id, &Material::metal) {
 	tex = getTextureUVCoordinateSet("glass", 0);
 	secondary_tex = getTextureUVCoordinateSet("obsidian", 0);
-	terciary_tex = getTextureUVCoordinateSet("beacon", 0);
+	terciary_tex = getTextureUVCoordinateSet("diamond_block", 0);
 	//fourth_tex = getTextureUVCoordinateSet("beacon_beam", 0);
 	//fifth_tex = getTextureUVCoordinateSet("beacon_beam", 1);
 	beacon->renderPass = Tile::glass->renderPass;
