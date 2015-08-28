@@ -15,6 +15,6 @@ public:
 private:
 	TextureUVCoordinateSet secondary_tex;
 	TextureUVCoordinateSet terciary_tex;
-	TextureUVCoordinateSet fourty_tex;
-	TextureUVCoordinateSet fifty_tex;
+	TextureUVCoordinateSet fourth_tex;
+	TextureUVCoordinateSet fifth_tex;
 };
