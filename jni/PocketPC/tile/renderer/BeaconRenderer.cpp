@@ -17,7 +17,8 @@ bool TileTessellator::tessellateBeaconInWorld(Tile* tile, TilePos const& pos){
 	forcedUV = tile->getTextureUVCoordinateSet("glass", 0);
 	setRenderBounds(0.375, 0.8125, 0.375, 0.625, 256, 0.625); 		
 	tessellateBlockInWorld(tile, pos);
-	forcedUV = tile->getTextureUVCoordinateSet("redstone_block", 0);  setRenderBounds(0.3125, 0.8125, 0.3125, 0.6875, 256, 0.6875); 		
+	forcedUV = tile->getTextureUVCoordinateSet("flowing_water", 0);  
+	setRenderBounds(0.3125, 0.8125, 0.3125, 0.6875, 256, 0.6875); 		
 	tessellateBlockInWorld(tile, pos);
 	}
 	useForcedUV = false;
