@@ -95,15 +95,18 @@ public:
 	virtual AABB* getAABB(TileSource*, int, int, int, AABB&, int, bool, int);
 	virtual void addAABBs(TileSource*, int, int, int, const AABB*, std::vector<AABB, std::allocator<AABB>>&);
 	virtual void addCollisionShapes(TileSource&, int, int, int, const AABB*, std::vector<AABB, std::allocator<AABB>>&);
-	virtual int getRenderLayer(TileSource*, TilePos const&) const; //
+	virtual int getRenderLayer(TileSource*, TilePos const&) const; 
 	virtual float getThickness() const;
 	virtual bool isCropTile() const;
+	virtual bool isContainerTile() const;
+	virtual bool isCraftingTile() const;
+	virtual bool isInteractiveTile() const;
 	virtual bool isPathfindable(Entity*, const TilePos&, int, int, int);
 	virtual bool mayPick();
-	virtual bool mayPick(TileSource*, int, bool); //
+	virtual bool mayPick(TileSource*, int, bool); 
 	virtual bool mayPlace(TileSource*, int, int, int, signed char);
 	virtual bool mayPlace(TileSource*, int, int, int);
-	virtual void tryToPlace(TileSource*, TilePos const&, unsigned char); //
+	virtual void tryToPlace(TileSource*, TilePos const&, unsigned char); 
 	virtual void tick(TileSource*, int, int, int, Random*);
 	virtual void animateTick(TileSource*, int, int, int, Random*);
 	virtual void destroy(TileSource*, int, int, int, int, Entity*);
@@ -113,10 +116,10 @@ public:
 	virtual void onRemove(TileSource*, int, int, int);
 	virtual void getSecondPart(TileSource&, TilePos const&, TilePos&);
 	virtual void onGraphicsModeChanged(bool, bool);
-	virtual int getResource(Random*, int, int); //
-	virtual int getResourceCount(Random*, int, int); //
+	virtual int getResource(Random*, int, int); 
+	virtual int getResourceCount(Random*, int, int); 
 	virtual void getDestroyProgress(Player*);
-	virtual void spawnResources(TileSource*, int, int, int, int, float, int); //
+	virtual void spawnResources(TileSource*, int, int, int, int, float, int); 
 	virtual void spawnBurnResources(TileSource*, float, float, float);
 	virtual float getExplosionResistance(Entity*);
 	virtual void clip(TileSource*, int, int, int, const Vec3&, const Vec3&, bool, int);
@@ -160,6 +163,7 @@ public:
 	virtual void getSpawnResourcesAuxValue(int);
 	virtual Tile* init();
 	virtual bool _canBeSilkTouched() const;
+	virtual ItemInstance* getSilkTouchItemInstance(int);
 	
 	
 	void addAABB(const AABB&, const AABB*, std::vector<AABB, std::allocator<AABB>>&);
