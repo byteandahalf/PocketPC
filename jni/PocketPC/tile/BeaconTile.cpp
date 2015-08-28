@@ -6,7 +6,7 @@ BeaconTile::BeaconTile(int id) : EntityTile(id, &Material::metal) {
 	terciary_tex = getTextureUVCoordinateSet("beacon", 0);
 	//fourth_tex = getTextureUVCoordinateSet("beacon_beam", 0);
 	//fifth_tex = getTextureUVCoordinateSet("beacon_beam", 1);
-	renderPass = Tile::glass->renderPass;
+	beacon->renderPass = Tile::glass->renderPass;
 	Tile::solid[id] = false;
 	Tile::lightBlock[id] = 0;
 	new TileItem(id - 256);
