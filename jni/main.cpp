@@ -72,4 +72,6 @@ JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void* reserved) {
 	MSHookFunction((void*) &I18n::get, (void*) &I18n_get_hook, (void**) &I18n_get_real);
 	MSHookFunction((void*) &Tile::initTiles, 					(void*) &Tile$initTiles, 						(void**) &_Tile$initTiles);
 	MSHookFunction((void*) &TileTessellator::tessellateInWorld, (void*) &TileTessellator$tessellateInWorld, 	(void**) &_TileTessellator$tessellateInWorld);
+	
+	return JNI_VERSION_1_2;
 }
