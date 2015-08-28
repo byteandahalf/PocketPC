@@ -9,8 +9,8 @@ public:
 	BeaconTile(int);
 
 	virtual const TextureUVCoordinateSet& getTexture(signed char, int);
-	Tile* isCubeShaped();
-	Tile* isSolidRender();
+	bool isCubeShaped();
+	bool isSolidRender();
 	
 private:
 	TextureUVCoordinateSet secondary_tex;
