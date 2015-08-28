@@ -24,7 +24,8 @@ static std::string getGameVersionString_hook() {
 static std::string (*I18n_get_real)(std::string const&, std::vector<std::string, std::allocator<std::string>> const&);
 static std::string I18n_get_hook(std::string const& key, std::vector<std::string, std::allocator<std::string>> const& a) {
 	if(key == "menu.copyright") return "©SmartDEV";
-	if(key == "menu.play") return "Singleplayer";
+//	if(key == "menu.play") return "Singleplayer";
+//We don't need this! I'm gonna redo the start menu
 	return I18n_get_real(key, a);
 }
 
