@@ -2,7 +2,7 @@
 
 Tile* BeaconTile::beacon = NULL;
 
-BeaconTile::BeaconTile(int id) : Tile(id, &Material::metal) {
+BeaconTile::BeaconTile(int id) : Tile(id, &Material::glass) {
 	tex = getTextureUVCoordinateSet("glass", 0);
 	secondary_tex = getTextureUVCoordinateSet("obsidian", 0);
 	terciary_tex = getTextureUVCoordinateSet("diamond_block", 0);
