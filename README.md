@@ -1,5 +1,4 @@
 # PocketPC 
-##A mod for MCPE replicating Minecraft: 1.9
 
 ###So far the following additions are:
 * Duel Wielding (Working on controlling each hand :D)
@@ -10,3 +9,8 @@
 * All PC Blocks
 * Music :D
 * Proper Duel Wielding
+
+###Developers
+* RandomAltThing (Twitter: @TheDiamondYT)
+* RedstoneGunMade (Twitter: @RedstoneGunMade)
+* TrinityDevelopers 
