@@ -1,5 +1,7 @@
 #include "BeaconTile.h"
 
+Tile* BeaconTile::beacon = NULL;
+
 BeaconTile::BeaconTile(int id) : Tile(id, &Material::metal) {
 	tex = getTextureUVCoordinateSet("glass", 0);
 	secondary_tex = getTextureUVCoordinateSet("obsidian", 0);
