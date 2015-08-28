@@ -130,7 +130,7 @@ public:
 	virtual void handleEntityInside(TileSource*, int, int, int, Entity*, Vec3&);
 	virtual int getColor(int);
 	virtual int getColor(TileSource*, int, int, int);
-	virtual bool isSeasonTinted() const;
+	virtual bool isSeasonTinted(TileSource*, TilePos const&) const;
 	virtual bool isSignalSource();
 	virtual bool getSignal(TileSource*, int, int, int);
 	virtual int getSignal(TileSource*, int, int, int, int);
