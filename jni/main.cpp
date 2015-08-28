@@ -54,10 +54,10 @@ void Tile$initTiles() {
 //Duel wielding.
 static void (*_ItemInHandRenderer$render)(ItemInHandRenderer*, float);
 static void ItemInHandRenderer$render(ItemInHandRenderer* renderer, float partialTicks) {
+	_ItemInHandRenderer$render(renderer, partialTicks);
 	if(duelWield){
-		_ItemInHandRenderer$render(renderer, partialTicks);
 		MatrixStack::Ref matref = MatrixStack::World.push();
-	    Vec3 oneleft {-0.995f, -0.01f, 0.01f};
+		Vec3 oneleft {-0.995f, -0.01f, 0.01f};
 		matref.matrix->translate(oneleft);
 		_ItemInHandRenderer$render(renderer, partialTicks);
 	}
