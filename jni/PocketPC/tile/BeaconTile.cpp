@@ -24,6 +24,6 @@ const TextureUVCoordinateSet& BeaconTile::getTexture(signed char side, int data)
 	return side == 0 ? tex : (side == 1 ? secondary_tex : terciary_tex);
 }
 
-TileEntity* BeaconTile::newTileEntity(const TilePos& tp) {
+/*TileEntity* BeaconTile::newTileEntity(const TilePos& tp) {
 	return new BeaconTileEntity();
-}
+}*/
