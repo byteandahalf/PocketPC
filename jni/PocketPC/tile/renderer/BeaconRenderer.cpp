@@ -14,12 +14,11 @@ bool TileTessellator::tessellateBeaconInWorld(Tile* tile, TilePos const& pos){
     setRenderBounds(0.1875, 0.1875, 0.1875, 0.8125, 0.8125, 0.8125);
 	tessellateBlockInWorld(tile, pos);
 	if(tileSource->getTilePtr(x,y-1,z)->id==43 && tileSource->getTilePtr(x,y-1,z-1)->id==43 && tileSource->getTilePtr(x,y-1,z+1)->id==43 && tileSource->getTilePtr(x-1,y-1,z)->id==43 && tileSource->getTilePtr(x+1,y-1,z)->id==43 && tileSource->getTilePtr(x-1,y-1,z-1)->id==43 && tileSource->getTilePtr(x+1,y-1,z-1)->id==43 && tileSource->getTilePtr(x-1,y-1,z-1)->id==43 && tileSource->getTilePtr(x-1,y-1,z+1)->id==43 && tileSource->getTilePtr(x+1,y-1,z-1)->id==43 && tileSource->getTilePtr(x+1,y-1,z+1)->id==43){
-		forcedUV = tile->getTextureUVCoordinateSet("glass", 0);
-		setRenderBounds(0.375, 0.8125, 0.375, 0.625, 256, 0.625); 
-		tessellateBlockInWorld(tile, pos);
-		forcedUV = tile->getTextureUVCoordinateSet("redstone_block", 0);
-        setRenderBounds(0.3125, 0.8125, 0.3125, 0.6875, 256, 0.6875); 
-		tessellateBlockInWorld(tile, pos);
+	forcedUV = tile->getTextureUVCoordinateSet("glass", 0);
+	setRenderBounds(0.375, 0.8125, 0.375, 0.625, 256, 0.625); 		
+	tessellateBlockInWorld(tile, pos);
+	forcedUV = tile->getTextureUVCoordinateSet("redstone_block", 0);  setRenderBounds(0.3125, 0.8125, 0.3125, 0.6875, 256, 0.6875); 		
+	tessellateBlockInWorld(tile, pos);
 	}
 	useForcedUV = false;
 	return true;
