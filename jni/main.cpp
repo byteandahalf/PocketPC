@@ -11,6 +11,7 @@
 #include <mcpe/client/renderer/TileTessellator.h>
 #include <mcpe/util/Matrix.h>
 #include <mcpe/client/renderer/ItemInHandRenderer.h>
+#include "PocketPC/tile/BeaconTile.h"
 
 bool duelWield = false;
 
