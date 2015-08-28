@@ -47,7 +47,7 @@ bool TileTessellator$tessellateInWorld(TileTessellator* self, Tile* tile, const 
 void (*_Tile$initTiles)();
 void Tile$initTiles() {
 	_Tile$initTiles();
-	BeaconTile::beacon = (Tile*)((new BeaconTile(138))->init()->setDestroyTime(1.0F)->setLightEmission(0.125F)->setNameId("beacon")->setSoundType(Tile::SOUND_GLASS));
+	BeaconTile::beacon = (Tile*)((new BeaconTile(138))->init()->setDestroyTime(1.0F)->setLightEmission(1.0F)->setNameId("beacon")->setSoundType(Tile::SOUND_GLASS));
 
 }
 
