@@ -3,7 +3,7 @@
 #include "mcpe/tile/EntityTile.h"
 #include "mcpe/item/Item.h"
 #include "mcpe/util/Random.h"
-#include "mcpe/world/level/tileentity/BeaconTileEntity.h"
+#include "mcpe/level/tileentity/BeaconTileEntity.h"
 
 class BeaconTile: public EntityTile {
 public:	
