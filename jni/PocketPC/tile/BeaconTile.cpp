@@ -1,4 +1,4 @@
-#include <BeaconTile.h>
+#include "BeaconTile.h"
 
 BeaconTile::BeaconTile(int id) : Tile(id, &Material::metal) {
 	tex = getTextureUVCoordinateSet("glass", 0);
@@ -12,11 +12,11 @@ BeaconTile::BeaconTile(int id) : Tile(id, &Material::metal) {
 	new TileItem(id - 256);
 }
 
-BeaconTile::isCubeShaped() { 
+bool BeaconTile::isCubeShaped() { 
      return false;
 }
 
-BeaconTile::isSolidRender() { 
+bool BeaconTile::isSolidRender() { 
      return false;
 }
 
