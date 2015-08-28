@@ -1,16 +1,15 @@
 #pragma once
 
-#include "mcpe/tile/EntityTile.h"
+#include "mcpe/tile/Tile.h"
 #include "mcpe/item/Item.h"
 #include "mcpe/util/Random.h"
-//#include "mcpe/level/tileentity/BeaconTileEntity.h"
 
-class BeaconTile: public EntityTile {
+class BeaconTile: public Tile {
 public:	
 	BeaconTile(int);
 
 	virtual const TextureUVCoordinateSet& getTexture(signed char, int);
-	//virtual TileEntity* newTileEntity(const TilePos &);
+	Tile* isCubeShaped()
 	
 private:
 	TextureUVCoordinateSet secondary_tex;
