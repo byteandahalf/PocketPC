@@ -1,3 +1,10 @@
+###IF YOU DONT USE A GIT CLIENT I WILL BE FURIOUS DONT SPAM COMMITS
+
+
+
+
+
+
 # PocketPC
 A mod for Minecraft PE adding blocks and items from minecraft PC!
 
